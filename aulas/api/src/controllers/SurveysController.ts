@@ -24,7 +24,7 @@ class SurveysController {
 
         const all = await surveysRepository.find();
 
-        return response.json(all);
+        return response.status(201).json(all);
     }
 }
 
